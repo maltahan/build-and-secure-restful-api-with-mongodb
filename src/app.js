@@ -14,15 +14,18 @@ connect();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //app.use('/api', restRouter);
-app.use('/', restRouter);
+app.use('/api', restRouter);
 app.use(
-    '/api-docs',
+    '/',
     swaggerUi.serve,
     swaggerUi.setup(swaggerDocument, {
         explorer: true,
     })
 );
-app.use(logger('dev'));
+//if we dont want to the use the logger in production 
+if (process.env.NODE_ENV === 'development') {
+    app.use(logger('dev'));
+}
 app.use((req, res, next) => {
     const error = new Error('Not found');
     error.message = 'Invalid route';
