@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\api",
+    "\\src\\api\\helpers",
+    "\\src\\api\\middlewares",
+    "\\src\\api\\resources",
+    "\\src\\config"
+  ],
+  "SelectedNode": "\\src\\config\\db.js",
+  "PreviewInSolutionExplorer": false
+}

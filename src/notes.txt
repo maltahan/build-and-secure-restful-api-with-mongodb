@@ -1,0 +1,5 @@
+"heroku-postbuild": "npm install",// to install all the dependince.
+procfile is the entry point to our project 
+web: npm run start this instruction indicates that run the project in the production mode(we can find it in the package.json)
+
+if we want to the project in the development mode then we have to type web: npm run dev
