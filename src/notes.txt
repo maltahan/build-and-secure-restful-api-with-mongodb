@@ -3,3 +3,14 @@ procfile is the entry point to our project
 web: npm run start this instruction indicates that run the project in the production mode(we can find it in the package.json)
 
 if we want to the project in the development mode then we have to type web: npm run dev
+
+deploy the project on heroku:
+1- heroku login to provide your credintials
+2- heroku create to create your repo
+3-heroku config:set MONGO_URI=(the connection string for your database i used mlab)
+4-heroku config:set secret="blabla"
+5-heroku config:set NPM_CONFIG_PRODUCTION = false (set dev dependencies to false)
+6-heroku git:remote -a (heroku repo name)
+7-git push heroku master
+
+on the development the host is "host": "localhost:3000", but on the production is the heroku url(lit-thicket-91905.herokuapp.com)

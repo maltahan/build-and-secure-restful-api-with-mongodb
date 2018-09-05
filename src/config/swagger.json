@@ -7,7 +7,7 @@
     "url": "https://opensource.org/licenses/MIT"
   },
   "version": "1.0.0",
-  "host": "localhost:3000",
+  "host": "lit-thicket-91905.herokuapp.com",
   "basePath": "/api",
   "tags": [
     {
@@ -23,7 +23,7 @@
       "description": "API for Playlist Endpoints"
     }
   ],
-  "schemes": [ "http" ],
+  "schemes": [ "http","https" ],
   "consumes": [ "application/json" ],
   "produces": [ "application/json" ],
   "paths": {

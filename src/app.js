@@ -13,7 +13,8 @@ const PORT = process.env.PORT || 3000;
 connect();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/api', restRouter);
+//app.use('/api', restRouter);
+app.use('/', restRouter);
 app.use(
     '/api-docs',
     swaggerUi.serve,
